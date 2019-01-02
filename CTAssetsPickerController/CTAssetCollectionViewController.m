@@ -146,7 +146,7 @@
 
 - (void)setupButtons
 {
-    if (self.doneButton == nil)
+    if (self.doneButton == nil && !self.picker.hideDoneBtn)
     {
         NSString *title = (self.picker.doneButtonTitle) ?
         self.picker.doneButtonTitle : CTAssetsPickerLocalizedString(@"Done", nil);

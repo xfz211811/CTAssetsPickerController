@@ -142,6 +142,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, readonly, strong) UISplitViewController *childSplitViewController;
 
+@property (nonatomic, assets) BOOL hideDoneBtn;
+
 
 /**
  *  @name Managing Selections
@@ -188,6 +190,8 @@ NS_ASSUME_NONNULL_BEGIN
  *  @name Closing the Picker
  */
 
+@optional
+
 /**
  *  Tells the delegate that the user finish picking photos or videos.
  *
@@ -197,8 +201,6 @@ NS_ASSUME_NONNULL_BEGIN
  *  @see assetsPickerControllerDidCancel:
  */
 - (void)assetsPickerController:(CTAssetsPickerController *)picker didFinishPickingAssets:(NSArray<PHAsset*> *)assets;
-
-@optional
 
 /**
  *  Tells the delegate that the user cancelled the pick operation.
