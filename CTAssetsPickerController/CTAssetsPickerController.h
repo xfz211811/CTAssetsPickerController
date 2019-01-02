@@ -142,7 +142,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, readonly, strong) UISplitViewController *childSplitViewController;
 
-@property (nonatomic, assets) BOOL hideDoneBtn;
+@property (nonatomic, assign) BOOL hideDoneBtn;
 
 
 /**
